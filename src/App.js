@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
 
@@ -39,9 +38,9 @@ function App() {
     <div className="App">
       <h1>Users Info {users.length}</h1>
       <form onSubmit={addUserHanlder}>
-        <input type="text" name="name" placeholder='name'/>
-        <input type="email" name="email" placeholder='email'/>
-        <input type="submit"  value="add user"/>
+        <input type="text" className="input" name="name" placeholder='name'/>
+        <input type="email" name="email" className="input" placeholder='email'/>
+        <input type="submit" className='btn' value="add user"/>
       </form>
       <ul>
       {
